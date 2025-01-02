@@ -3,4 +3,6 @@ if vim.g.loaded_register then
 end
 vim.g.loaded_register = true
 
-require('register').setup()
+vim.schedule(function()
+  require('register').setup()
+end)
