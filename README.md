@@ -1,6 +1,6 @@
 # nvim-plugin-prompt-register
 因为我总是忘记自己设置的快捷键，所以写了这个插件。  
-简单来说，就是通过输入提示的一部分，来找到对应的快捷键。 
+简单来说，就是通过输入提示的一部分，来找到对应的快捷键。  
 I always forget my own shortcuts, so I wrote this plugin.  
 Basically, it finds the corresponding shortcut by inputting part of the prompt.  
 
