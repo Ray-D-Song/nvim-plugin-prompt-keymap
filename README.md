@@ -4,6 +4,18 @@
 I always forget my own shortcuts, so I wrote this plugin.  
 Basically, it finds the corresponding shortcut by inputting part of the prompt.  
 
+## Installation (Lazy)
+```lua
+{
+  'ray-d-song/nvim-plugin-prompt-keymap',
+  lazy = false,
+  config = function()
+    local register = require('register').register
+    register('快速保存')('n', 'wq', ':wq<CR>', { noremap = true, silent = true })
+  end,
+},
+```
+
 ## zh-CN
 register 是一个柯里化函数，接收字符串参数 prompt(提示)，并返回用于注册快捷键的函数。  
 ```lua
