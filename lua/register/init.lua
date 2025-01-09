@@ -58,7 +58,7 @@ end
 --- @param t table
 function M.register_all(t)
   for k, v in pairs(t) do
-    M.register(k)(v)
+    M.register(v.prompt)(v.mode, v.key, v.value, v.opts)
   end
 end
 
