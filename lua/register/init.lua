@@ -54,4 +54,12 @@ function M.register(prompt)
   end
 end
 
+--- Register all shortcuts in a table
+--- @param t table
+function M.register_all(t)
+  for k, v in pairs(t) do
+    M.register(k)(v)
+  end
+end
+
 return M
